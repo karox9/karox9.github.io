@@ -241,7 +241,7 @@ ol.normal {
     padding-left: 100px;
   }
   
-  .flex-items:nth-child(1) {
+  .flex-item1:nth-child(1) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -251,7 +251,7 @@ ol.normal {
     margin-top: -20px;
   }
 
-.flex-items:nth-child(1) img {
+.flex-item1:nth-child(1) img {
     width: 20px;
     height: 14px; 
     margin-left: -35px;
@@ -260,7 +260,7 @@ ol.normal {
     box-shadow: 3px 3px 3px rgb(182, 182, 180);
 }
 
-.flex-items span {
+.flex-item1 span {
     position: absolute;
 }
 
@@ -274,7 +274,7 @@ ol.normal {
     margin-top: -17px;
 }
 
-.flex-items:nth-child(2) img {
+.flex-item1:nth-child(2) img {
     width: 20px;
     height: 14px; 
     margin-left: -35px;
