@@ -264,7 +264,7 @@ ol.normal {
     position: absolute;
 }
 
-.flex-items:nth-child(2) {
+.flex-item1:nth-child(2) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
