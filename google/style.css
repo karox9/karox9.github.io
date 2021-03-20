@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .html {
     height: 100%;
     min-width: 400px;
@@ -12,10 +16,9 @@
     font-family: arial,sans-serif;
     color: #222;
     display: block;
-    margin: 8px;
 }
 
-.okno {
+.okno_glowne {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -30,12 +33,12 @@
     height: 60px;
 }
 
-.pasek1 {
+.podklasa1 {
     display: inline-block;
     flex-grow: 1;
 }
 
-.podklasa1 {
+.podklasa1_1 {
     min-width: auto;
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
     z-index: 986;
@@ -45,7 +48,7 @@
     transition: box-shadow 250ms;
 }
 
-.prostokat {
+.prostokat1 {
     display: flex;
     float: right;
     padding-left: 32px;
@@ -60,7 +63,7 @@
     font-family: Roboto,RobotoDraft,Arial,sans-serif;
 }
 
-.prostokat2 {
+.prostokat1_1 {
     font-family: arial,sans-serif;
     line-height: normal;
     padding-right: 15px;
@@ -94,13 +97,13 @@
     vertical-align: middle;
 }
 
-.prostokat3 {
+.prostokat1_2 {
     position: relative;
     float: right;
     line-height: normal;
 }
 
-.element3 {
+.element1 {
     display: inline-block;
     vertical-align: middle;
     padding: 4px;
@@ -130,7 +133,6 @@
     box-sizing: border-box;
 }
 
-
 .klasa2 {
     display: flex;
     flex-direction: column;
@@ -156,8 +158,6 @@
     width: auto;
 }
 
-
-
 .klasa3 {
     flex-shrink: 0;
     box-sizing: border-box;
@@ -166,14 +166,13 @@
     height: 160px;
 }
 
-.podklasa3 {
+.podklasa3_1 {
     width: auto;
     max-width: 584px;
     position: relative;
     margin: 0 auto;
     padding-top: 6px;
 }
-
 
 .wyszukiwarka {
     width: auto;
@@ -196,7 +195,7 @@
     
 }
 
-.klasa3_3 {
+.box3_1 {
     flex: 1;
     display: flex;
     padding: 5px 8px 0 16px;
@@ -208,6 +207,12 @@
     align-items: center;
     padding-right: 13px;
     margin-top: -5px;
+}
+
+.pole {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 .klawiatura {
@@ -222,13 +227,7 @@
     border-radius: 50%;
 }
 
-.pole {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-}
-
-.prostokat33 {
+.prostokat3_2 {
     padding-top: 18px;
     height: 70px;
 }
@@ -252,7 +251,7 @@
     vertical-align: middle;
 }
 
-.traf {
+.szczesliwy_traf {
     position: relative;
     display: inline-block;
     outline: none;
@@ -301,14 +300,6 @@
     font-family: arial,sans-serif;
 }
 
-.czesc_lewa {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    min-width: 30%;
-    order: 1;
-}
-
 .a {
     text-decoration: none;
     font-size: 14px;
@@ -326,6 +317,14 @@
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #70757a;
+}
+
+.czesc_lewa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
 }
 
 .czesc_srodkowa {
@@ -362,5 +361,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-
