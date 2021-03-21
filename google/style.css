@@ -259,13 +259,14 @@
     min-width: 54px;
     text-align: center;
     vertical-align: middle;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
 }
 
 .szukaj a {
     text-decoration: none;
     color: rgba(0,0,0,0.87);
 }
-
 
 .szczesliwy_traf {
     position: relative;
@@ -339,6 +340,7 @@
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #70757a;
+    text-decoration: none;
 }
 
 .czesc_lewa {
