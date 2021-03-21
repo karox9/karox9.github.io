@@ -83,6 +83,8 @@
     display: inline-block;
     line-height: 24px;
     vertical-align: middle;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
 }
 
 .grafika {
@@ -96,6 +98,8 @@
     display: inline-block;
     line-height: 24px;
     vertical-align: middle;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
 }
 
 .prostokat1_2 {
@@ -132,6 +136,11 @@
     line-height: 16px;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.zaloguj a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .klasa2 {
