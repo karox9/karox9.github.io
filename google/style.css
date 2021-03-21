@@ -261,6 +261,12 @@
     vertical-align: middle;
 }
 
+.szukaj a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+
 .szczesliwy_traf {
     position: relative;
     display: inline-block;
@@ -278,6 +284,11 @@
     min-width: 54px;
     text-align: center;
     vertical-align: middle;
+}
+
+.szczesliwy_traf a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
 }
 
 .klasa4 {
