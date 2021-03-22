@@ -226,6 +226,8 @@
     flex-wrap: wrap;
     border: none;
     outline: none;
+    padding-right: 13px;
+    margin-top: -5px;
 }
 
 .input {
