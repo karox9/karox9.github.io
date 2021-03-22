@@ -112,6 +112,7 @@
     display: inline-block;
     vertical-align: middle;
     padding: 4px;
+    cursor: pointer;
 }
 
 .zaloguj {
@@ -223,6 +224,12 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    border: none;
+    outline: none;
+}
+
+.input {
+    cursor: text;
 }
 
 .klawiatura {
@@ -235,6 +242,7 @@
 
 .klawiatura img {
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .prostokat3_2 {
