@@ -176,19 +176,13 @@ body {
 }
 
 .home .klasa3 {
-    flex-shrink: 0;
-    box-sizing: border-box;
-    max-height: 160px;
-    padding: 20px;
-    height: 160px;
-}
-
-.home .podklasa3_1 {
     width: auto;
-    max-width: 584px;
     position: relative;
     margin: 0 auto;
     padding-top: 6px;
+    padding: 20px;
+    flex-shrink: 0;
+    box-sizing: border-box; 
 }
 
 .home .wyszukiwarka {
@@ -200,57 +194,73 @@ body {
 }
 
 .home .prostokat3_1 {
-    width: auto;
-    flex: 1;
     background: #fff;
-    display: flex;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
-    height: 44px;
-    margin: 0 auto;
-    
+    z-index: 3;
+    padding-bottom: 5px;
+}
+
+.prostokat3_1:hover,
+.prostokat3_1:focus 
+{
+    box-shadow: 0 0 0.3em 0.1em #d9d9d9;
 }
 
 .home .box3_1 {
+    display: flex;
+    height: 40px;
+    width: 580px;
+}
+
+.home .widok {
     flex: 1;
     display: flex;
     padding: 5px 8px 0 16px;
-    padding-left: 14px;
 }
 
-.home .lupa {
-    display: flex;
-    align-items: center;
-    padding-right: 13px;
-    margin-top: -5px;
-}
-
-.home .pole {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+.home input {
+    background-color: transparent;
+    margin-top: 1.5px;
+	margin-left: 5px;
     border: none;
+    padding-right: 0;
+    padding-bottom: 10px;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
     outline: none;
-    padding-right: 13px;
-    margin-top: -5px;
-}
-
-.home .input {
-    cursor: text;
-}
-
-.home .klawiatura {
     display: flex;
-    flex: 0 0 auto;
-    margin-top: -5px;
-    align-items: stretch;
-    flex-direction: row;
+    flex: 100%;
+    height: 34px;
+	width: 280px;
+    font-size: 18px;
+    font-family: arial,sans-serif;
+    -webkit-appearance: textfield;
+    font-weight: 400;
+    text-align: start;
 }
 
-.home .klawiatura img {
-    border-radius: 50%;
+.home .linia {
+    border-top: 1px solid #e8eaed;
+    margin: 0 20px 0 14px;
+    padding-bottom: 4px;
+}
+
+.home ul {
+    display: block;
+    padding: 0;
+    padding-left: 15px;
+    margin: 5px;
     cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px
+}
+
+.home ul:hover,
+.home ul:focus 
+{
+    box-shadow: 0 0 0.3em 0.1em #d9d9d9;
 }
 
 .home .prostokat3_2 {
@@ -312,7 +322,7 @@ body {
     flex-grow: 1;
     flex-shrink: 0;
     box-sizing: border-box;
-    height: 245px;
+    height: 228px;
 }
 
 .home .klasa5 {
@@ -420,5 +430,10 @@ body {
 }
 
 .home .footer {
+    display: none;
+}
+
+.home .hide
+{
     display: none;
 }

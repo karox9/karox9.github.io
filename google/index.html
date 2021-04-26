@@ -10,7 +10,7 @@
     <script src="cities.js"></script>
 </head>
 <body>
-<div id="app" :class="[googleSearch.length > 0 ? 'results' : 'home']">
+<div id="app" :class="[text.length > 0 ? 'results' : 'home']">
     <div class="okno_glowne">
         <div class="klasa1">
             <div class="podklasa1">
@@ -46,35 +46,35 @@
             </div>
         </div>
         <div class="klasa3">
-            <div class="podklasa3_1">
-                <div class="podklasa3_2">
-                    <div class="wyszukiwarka"> 
-                        <div class="prostokat3_1">
-                            <div class="box3_1">
-                                <div class="lupa">
-                                    <img src="Lupa.png" width="32.9" height="42.5" href="#">
-                                </div>
-                                <input class="pole" v-model="googleSearch">
-                                </input>
-                                <div class="klawiatura">
-                                    <img src="Klawiatura.png" width="40" height="44">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prostokat3_2">
-                            <center>
-                            <div class="szukaj">
-                                <a href="#">Szukaj w Google</a> 
-                            </div>
-                            <div class="szczesliwy_traf"> 
-                                <a href="#">Szczęśliwy traf</a>                               
-                            </div>
-                            </center>
+            <div class="wyszukiwarka"> 
+                <div class="prostokat3_1" @click="list()">
+                    <div class="box3_1">
+                        <div class="widok">
+                            <img src="Lupka1.png" width="29" height="30.5" href="#">
+                            <input v-model="googleSearch" @keyup.enter="enter()"></input>
+                            <img src="Klawiatura1.png" width="40" height="28">
                         </div>
                     </div>
+                    <div :class="[value == 0 ?  'hide' : 'lista']">
+                        <div class="linia"></div>
+                        <ul v-for="city in filteredCities" @click="fill(city)">
+                            <img src="Lupka1.png" width="20" height="20">
+                            {{googleSearch}}<b>{{ city.name.substring(googleSearch.length) }}</b>
+                        </ul>
+                    </div>
                 </div>
-            </div>     
-        </div>
+                <div class="prostokat3_2">
+                    <center>
+                    <div class="szukaj">
+                        <a href="#">Szukaj w Google</a> 
+                    </div>
+                    <div class="szczesliwy_traf"> 
+                         <a href="#">Szczęśliwy traf</a>                               
+                    </div>
+                     </center>
+                </div>
+            </div>
+        </div>     
         <div class="klasa4">
         </div>
         <div class="klasa5">
@@ -174,9 +174,6 @@
         <div id="center">
             <div class="result_number">
                 <a>Około 11 600 000 wyników (0,35 s)</a>
-            </div>
-            <div class="cities" v-for="city in filteredCities">
-                {{ city.name }}
             </div>
             <div id="res" class="all_results">
                     <div id="res_2">
