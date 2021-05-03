@@ -20,7 +20,7 @@ body {
     margin: 0;
     min-width: 400px;
     font-size: 14px;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     color: #222;
     display: block;
 }
@@ -247,20 +247,47 @@ body {
     padding-bottom: 4px;
 }
 
+.lista {
+    line-height: 0.8rem;
+    border-top: 1px solid #dfe1e5;
+    background-color: #fff;
+}
+
+.lista li {
+    padding: 2px 0px;
+    cursor: pointer;
+}
+
+.element:hover,
+.element:active, 
+.element:focus {
+    font-style: normal;
+    background-color: #dfe1e5;
+    height: 25px;
+}
+
+.element a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1em; 
+}
+
+.without_bold {
+    font-weight: 500;
+}
+
+.kl_focus {
+    background-color: #dfe1e5;
+}
+
 .home ul {
     display: block;
     padding: 0;
-    padding-left: 15px;
-    margin: 5px;
+    padding-left: 10px;
+    margin: 6px;
     cursor: pointer;
     font-family: arial, sans-serif;
-    font-size: 14px
-}
-
-.home ul:hover,
-.home ul:focus 
-{
-    box-shadow: 0 0 0.3em 0.1em #d9d9d9;
+    list-style: none;
 }
 
 .home .prostokat3_2 {
@@ -421,7 +448,7 @@ body {
     display: none;
 }
 
-.home .top {
+.home .top1 {
     display: none;
 }
 
@@ -430,10 +457,5 @@ body {
 }
 
 .home .footer {
-    display: none;
-}
-
-.home .hide
-{
     display: none;
 }
