@@ -35,10 +35,6 @@ Vue.component('v-autocompleter',
     },
 
     methods: {
-        handleClick: function (name) {
-            this.googleSearch = name;
-            this.$emit('wybierz', this.googleSearch)
-          },
         down(){
             if (this.mark < this.filteredCities.length-1)
             {
